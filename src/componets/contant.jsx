@@ -13,12 +13,12 @@ export default function Contant() {
                             <div className="grid-item">
                                 medical gyaan
                             </div>
-                            <div className="grid-item">
+                            {/* <div className="grid-item">
                                 legal gyaan
                             </div>
                             <div className="grid-item">
                                 basic gyaan
-                            </div>
+                            </div> */}
 
 
                         </div>

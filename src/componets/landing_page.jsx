@@ -4,21 +4,22 @@ export default function Landing(){
     return(
         <div className="landing" style={{minHeight:750}}>
             <div className="lgrid">
+            
             <div class="grid-item-l" >
                 <div style={{fontSize:100, fontFamily:"Courier New",fontWeight:"bold"}}>
-                StartUp
+                 Sangini
                 </div>
                 <div style={{fontSize:60, padding:100, fontFamily:"Courier New"}}>
-                    A consultancy firm
+                    One destination for all your medical needs.
                 </div>
-                <form action="">
+                {/* <form action="">
                     <input
                     type="text" 
                     required
                     value={title}
                     onChange={(e)=>setTitle(e.target.value)}
                     />
-                </form>
+                </form> */}
                 <p>
                 {title}
                 </p>
