@@ -9,16 +9,16 @@ export default function Option() {
             </div>
         <div className="qgrid" >
             <div class="grid-item">
-                <a href="/medicon">Medical Consentencty</a>
+                <a href="/medicon">Mental health</a>
                 <div>
 
                 </div>
             </div>
             <div class="grid-item">
-                <a href="/legalcon">Legal Consentencty</a>
+                <a href="/legalcon">Sexual health</a>
             </div>
             <div class="grid-item">
-                <a href="/basiccon">Basic Consentencty</a>
+                <a href="/basiccon">Physical health</a>
             </div>
         </div>
         </div>
