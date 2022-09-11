@@ -11,8 +11,15 @@ const Home = () => {
   return (
     <>
     <Landing/> 
-        <Option /> 
-        <Contant/>
+    <Option /> 
+    <Contant/>
+    </>
+  )
+}
+function Medicon() {
+  return(
+    <>
+    {/* random component */}
     </>
   )
 }
@@ -23,13 +30,11 @@ function App() {
     <div className='total'>
       <Navbar /> 
       <Switch>
-      <Route path="/" component={Home}/> 
+        <Route path="/" component={Home}/> 
+        <Route path="/medicon" component={Medicon} /> 
       </Switch>
         <About/> 
         <Footer />  
-      <Route path="/medicon/:id" > 
-        {/* <About/>  */}
-      </Route>  
     </div> 
     </Router> 
   );
