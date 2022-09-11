@@ -6,6 +6,15 @@ import About from './componets/about'
 import Landing from './componets/landing_page';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Contant from './componets/contant';
+import M_landing from "./componets/medi_landing";
+const m_landing = () => {
+  return (
+    <>
+    <M_landing/>
+    </>
+  )
+}
+ 
 
 const Home = () => {
   return (
@@ -23,13 +32,12 @@ function App() {
     <div className='total'>
       <Navbar /> 
       <Switch>
-      <Route path="/" component={Home}/> 
+      <Route path="/" exact component={Home}/> 
       </Switch>
+      <Route path="/medicon" exact component={m_landing} /> 
+
         <About/> 
-        <Footer />  
-      <Route path="/medicon/:id" > 
-        {/* <About/>  */}
-      </Route>  
+        <Footer /> 
     </div> 
     </Router> 
   );
