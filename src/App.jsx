@@ -5,14 +5,15 @@ import Option from './componets/Option'
 import About from './componets/about'
 import Landing from './componets/landing_page';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
-import Contant from './componets/contant';
+import Mission from './componets/mission';
+ 
 
 const Home = () => {
   return (
     <>
     <Landing/> 
-    <Option /> 
-    <Contant/>
+    <Option />
+    <Mission/>
     </>
   )
 }
@@ -30,9 +31,11 @@ function App() {
     <div className='total'>
       <Navbar /> 
       <Switch>
+
         <Route path="/" component={Home}/> 
         <Route path="/medicon" component={Medicon} /> 
       </Switch>
+
         <About/> 
         <Footer />  
     </div> 

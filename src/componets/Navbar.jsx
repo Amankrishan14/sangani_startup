@@ -1,20 +1,16 @@
 import React from "react";
 export default function nav() {
     return (
-        <div>
-            <ul className="navname">
-                <li>
-                    Sup1
-                </li>
-
-                <li className="dropdown">
-                    <button className="dropbtn">Account</button>
-                    <div className="dropdown-content">
-                        <a href="/">LogIn</a>
-                        <a href="/">SignUp</a>
-                    </div>
-                </li>
-            </ul>
+        <>
+        <div className="nav-grid" style={{justifyContent:"center",gridTemplateColumns:"auto"}}>
+            <div className="logo" style={{minHeight:"fit-content"}}>fn</div>
         </div>
+        <div className="nav-grid">
+            <div className="navg-component">hello</div>
+            <div className="navg-component">hello</div>
+            <div className="navg-component">hello</div>
+            <div className="navg-component">hello</div>
+        </div>
+        </>
     )
 }
